@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://github.com/yLuigizinDev/FloxxHubCB/blob/main/main.lua", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yLuigizinDev/FloxxHubCB/main/main.lua", true))()
