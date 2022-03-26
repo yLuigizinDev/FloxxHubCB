@@ -288,7 +288,7 @@ local function SAVKADK_fake_script() -- InfCash.ICS
 			if btn.Text == "Inf Cash: false" then
 				btn.Text = "Inf Cash: true"
 				while btn.Text == "Inf Cash: true" do
-					wait()
+					wait(0.1)
 					plr.Cash.Value = 999999
 				end
 			else
