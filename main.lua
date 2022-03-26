@@ -11,12 +11,13 @@ local RF = Instance.new("Frame")
 local LF = Instance.new("Frame")
 local VF = Instance.new("Frame")
 local MF_2 = Instance.new("Frame")
+local InfCash = Instance.new("TextButton")
 local UF = Instance.new("Frame")
 local RedTheme = Instance.new("TextButton")
 local GreenTheme = Instance.new("TextButton")
 
 FloxxHubCB.Name = "FloxxHubCB"
-FloxxHubCB.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+FloxxHubCB.Parent = game.CoreGui
 FloxxHubCB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 MF.Name = "MF"
@@ -125,6 +126,17 @@ MF_2.Position = UDim2.new(0.0492721163, 0, 0.366533875, 0)
 MF_2.Size = UDim2.new(0, 812, 0, 259)
 MF_2.Visible = false
 
+InfCash.Name = "InfCash"
+InfCash.Parent = MF_2
+InfCash.BackgroundColor3 = Color3.fromRGB(22, 161, 26)
+InfCash.Position = UDim2.new(0.0418719202, 0, 0.0424710438, 0)
+InfCash.Size = UDim2.new(0, 142, 0, 43)
+InfCash.Font = Enum.Font.SourceSansBold
+InfCash.Text = "Inf Cash: false"
+InfCash.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfCash.TextSize = 26.000
+InfCash.TextWrapped = true
+
 UF.Name = "UF"
 UF.Parent = MF
 UF.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -154,7 +166,7 @@ GreenTheme.TextColor3 = Color3.fromRGB(255, 255, 255)
 GreenTheme.TextSize = 26.000
 GreenTheme.TextWrapped = true
 
-local function DEYYO_fake_script() -- LBtn.LS 
+local function XOVODQZ_fake_script() -- LBtn.LS 
 	local script = Instance.new('LocalScript', LBtn)
 
 	local LF = script.Parent.Parent.Parent.LF
@@ -175,8 +187,8 @@ local function DEYYO_fake_script() -- LBtn.LS
 		end
 	)
 end
-coroutine.wrap(DEYYO_fake_script)()
-local function DCQF_fake_script() -- RBtn.RS 
+coroutine.wrap(XOVODQZ_fake_script)()
+local function DCPMTKJ_fake_script() -- RBtn.RS 
 	local script = Instance.new('LocalScript', RBtn)
 
 	local LF = script.Parent.Parent.Parent.LF
@@ -197,8 +209,8 @@ local function DCQF_fake_script() -- RBtn.RS
 		end
 	)
 end
-coroutine.wrap(DCQF_fake_script)()
-local function HETKD_fake_script() -- VBtn.VS 
+coroutine.wrap(DCPMTKJ_fake_script)()
+local function KTBXJ_fake_script() -- VBtn.VS 
 	local script = Instance.new('LocalScript', VBtn)
 
 	local LF = script.Parent.Parent.Parent.LF
@@ -219,8 +231,8 @@ local function HETKD_fake_script() -- VBtn.VS
 		end
 	)
 end
-coroutine.wrap(HETKD_fake_script)()
-local function GWMQI_fake_script() -- MBtn.MS 
+coroutine.wrap(KTBXJ_fake_script)()
+local function TRNOBWH_fake_script() -- MBtn.MS 
 	local script = Instance.new('LocalScript', MBtn)
 
 	local LF = script.Parent.Parent.Parent.LF
@@ -241,8 +253,8 @@ local function GWMQI_fake_script() -- MBtn.MS
 		end
 	)
 end
-coroutine.wrap(GWMQI_fake_script)()
-local function DAAQ_fake_script() -- UBtn.US 
+coroutine.wrap(TRNOBWH_fake_script)()
+local function GUFWL_fake_script() -- UBtn.US 
 	local script = Instance.new('LocalScript', UBtn)
 
 	local LF = script.Parent.Parent.Parent.LF
@@ -263,13 +275,35 @@ local function DAAQ_fake_script() -- UBtn.US
 		end
 	)
 end
-coroutine.wrap(DAAQ_fake_script)()
-local function BRZBC_fake_script() -- RedTheme.RTS 
+coroutine.wrap(GUFWL_fake_script)()
+local function DLNIQB_fake_script() -- InfCash.ICS 
+	local script = Instance.new('LocalScript', InfCash)
+
+	local B = script.Parent
+	
+	B.MouseButton1Click:Connect(
+		function(plr, btn)
+			plr = game:GetService("Players").LocalPlayer
+			btn = B
+			if btn.Text == "Inf Cash: false" then
+				btn.Text = "Inf Cash: true"
+				while btn.Text == "Inf Cash: true" do
+					plr.Cash.Value = 999999
+				end
+			else
+				btn.Text = "Inf Cash: false"
+			end
+		end
+	)
+end
+coroutine.wrap(DLNIQB_fake_script)()
+local function CDPVP_fake_script() -- RedTheme.RTS 
 	local script = Instance.new('LocalScript', RedTheme)
 
 	local B = script.Parent
 	
 	local B2 = script.Parent.Parent.GreenTheme
+	
 	local MainF = script.Parent.Parent.Parent
 	
 	local LBtn = script.Parent.Parent.Parent.TF.LBtn
@@ -282,6 +316,8 @@ local function BRZBC_fake_script() -- RedTheme.RTS
 	
 	local VBtn = script.Parent.Parent.Parent.TF.VBtn
 	
+	local InfCash = script.Parent.Parent.Parent.MF.InfCash
+	
 	B.MouseButton1Click:Connect(
 		function()
 			MainF.BackgroundColor3 = Color3.fromRGB(255,0,0)
@@ -292,14 +328,15 @@ local function BRZBC_fake_script() -- RedTheme.RTS
 			RBtn.BackgroundColor3 = Color3.fromRGB(255,0,0)
 			UBtn.BackgroundColor3 = Color3.fromRGB(255,0,0)
 			VBtn.BackgroundColor3 = Color3.fromRGB(255,0,0)
+			InfCash.BackgroundColor3 = Color3.fromRGB(255,0,0)
 			
 			B.BackgroundColor3 = Color3.fromRGB(255,0,0)
 			B2.BackgroundColor3 = Color3.fromRGB(255,0,0)
 		end
 	)
 end
-coroutine.wrap(BRZBC_fake_script)()
-local function OXPCX_fake_script() -- GreenTheme.GTS 
+coroutine.wrap(CDPVP_fake_script)()
+local function KKRHVT_fake_script() -- GreenTheme.GTS 
 	local script = Instance.new('LocalScript', GreenTheme)
 
 	local B = script.Parent
@@ -318,6 +355,8 @@ local function OXPCX_fake_script() -- GreenTheme.GTS
 	
 	local VBtn = script.Parent.Parent.Parent.TF.VBtn
 	
+	local InfCash = script.Parent.Parent.Parent.MF.InfCash
+	
 	B.MouseButton1Click:Connect(
 		function()
 			MainF.BackgroundColor3 = Color3.fromRGB(20, 255, 98)
@@ -327,22 +366,23 @@ local function OXPCX_fake_script() -- GreenTheme.GTS
 			RBtn.BackgroundColor3 = Color3.fromRGB(22, 161, 26)
 			UBtn.BackgroundColor3 = Color3.fromRGB(22, 161, 26)
 			VBtn.BackgroundColor3 = Color3.fromRGB(22, 161, 26)
+			InfCash.BackgroundColor3 = Color3.fromRGB(22, 161, 26)
 			
 			B.BackgroundColor3 = Color3.fromRGB(22, 161, 26)
 			B2.BackgroundColor3 = Color3.fromRGB(22, 161, 26)
 		end
 	)
 end
-coroutine.wrap(OXPCX_fake_script)()
-local function RHCISG_fake_script() -- FloxxHubCB.A 
+coroutine.wrap(KKRHVT_fake_script)()
+local function HQUWWK_fake_script() -- FloxxHubCB.A 
 	local script = Instance.new('LocalScript', FloxxHubCB)
 
 	local MF = script.Parent.MF
 	MF.Active = true
 	MF.Draggable = true
 end
-coroutine.wrap(RHCISG_fake_script)()
-local function OGYCNG_fake_script() -- FloxxHubCB.M 
+coroutine.wrap(HQUWWK_fake_script)()
+local function PQAXM_fake_script() -- FloxxHubCB.M 
 	local script = Instance.new('LocalScript', FloxxHubCB)
 
 	local MF = script.Parent.MF
@@ -355,4 +395,4 @@ local function OGYCNG_fake_script() -- FloxxHubCB.M
 	
 	game:GetService("UserInputService").InputBegan:connect(onKeyPress)
 end
-coroutine.wrap(OGYCNG_fake_script)()
+coroutine.wrap(PQAXM_fake_script)()
