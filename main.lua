@@ -166,7 +166,7 @@ GreenTheme.TextColor3 = Color3.fromRGB(255, 255, 255)
 GreenTheme.TextSize = 26.000
 GreenTheme.TextWrapped = true
 
-local function XOVODQZ_fake_script() -- LBtn.LS 
+local function WSCMU_fake_script() -- LBtn.LS 
 	local script = Instance.new('LocalScript', LBtn)
 
 	local LF = script.Parent.Parent.Parent.LF
@@ -187,8 +187,8 @@ local function XOVODQZ_fake_script() -- LBtn.LS
 		end
 	)
 end
-coroutine.wrap(XOVODQZ_fake_script)()
-local function DCPMTKJ_fake_script() -- RBtn.RS 
+coroutine.wrap(WSCMU_fake_script)()
+local function ILKACMM_fake_script() -- RBtn.RS 
 	local script = Instance.new('LocalScript', RBtn)
 
 	local LF = script.Parent.Parent.Parent.LF
@@ -209,8 +209,8 @@ local function DCPMTKJ_fake_script() -- RBtn.RS
 		end
 	)
 end
-coroutine.wrap(DCPMTKJ_fake_script)()
-local function KTBXJ_fake_script() -- VBtn.VS 
+coroutine.wrap(ILKACMM_fake_script)()
+local function BJVCPFJ_fake_script() -- VBtn.VS 
 	local script = Instance.new('LocalScript', VBtn)
 
 	local LF = script.Parent.Parent.Parent.LF
@@ -231,8 +231,8 @@ local function KTBXJ_fake_script() -- VBtn.VS
 		end
 	)
 end
-coroutine.wrap(KTBXJ_fake_script)()
-local function TRNOBWH_fake_script() -- MBtn.MS 
+coroutine.wrap(BJVCPFJ_fake_script)()
+local function APRLQR_fake_script() -- MBtn.MS 
 	local script = Instance.new('LocalScript', MBtn)
 
 	local LF = script.Parent.Parent.Parent.LF
@@ -253,8 +253,8 @@ local function TRNOBWH_fake_script() -- MBtn.MS
 		end
 	)
 end
-coroutine.wrap(TRNOBWH_fake_script)()
-local function GUFWL_fake_script() -- UBtn.US 
+coroutine.wrap(APRLQR_fake_script)()
+local function IRNQLJX_fake_script() -- UBtn.US 
 	local script = Instance.new('LocalScript', UBtn)
 
 	local LF = script.Parent.Parent.Parent.LF
@@ -275,8 +275,8 @@ local function GUFWL_fake_script() -- UBtn.US
 		end
 	)
 end
-coroutine.wrap(GUFWL_fake_script)()
-local function DLNIQB_fake_script() -- InfCash.ICS 
+coroutine.wrap(IRNQLJX_fake_script)()
+local function SAVKADK_fake_script() -- InfCash.ICS 
 	local script = Instance.new('LocalScript', InfCash)
 
 	local B = script.Parent
@@ -288,6 +288,7 @@ local function DLNIQB_fake_script() -- InfCash.ICS
 			if btn.Text == "Inf Cash: false" then
 				btn.Text = "Inf Cash: true"
 				while btn.Text == "Inf Cash: true" do
+					wait()
 					plr.Cash.Value = 999999
 				end
 			else
@@ -296,8 +297,8 @@ local function DLNIQB_fake_script() -- InfCash.ICS
 		end
 	)
 end
-coroutine.wrap(DLNIQB_fake_script)()
-local function CDPVP_fake_script() -- RedTheme.RTS 
+coroutine.wrap(SAVKADK_fake_script)()
+local function ENHGXY_fake_script() -- RedTheme.RTS 
 	local script = Instance.new('LocalScript', RedTheme)
 
 	local B = script.Parent
@@ -335,8 +336,8 @@ local function CDPVP_fake_script() -- RedTheme.RTS
 		end
 	)
 end
-coroutine.wrap(CDPVP_fake_script)()
-local function KKRHVT_fake_script() -- GreenTheme.GTS 
+coroutine.wrap(ENHGXY_fake_script)()
+local function XWSX_fake_script() -- GreenTheme.GTS 
 	local script = Instance.new('LocalScript', GreenTheme)
 
 	local B = script.Parent
@@ -373,16 +374,16 @@ local function KKRHVT_fake_script() -- GreenTheme.GTS
 		end
 	)
 end
-coroutine.wrap(KKRHVT_fake_script)()
-local function HQUWWK_fake_script() -- FloxxHubCB.A 
+coroutine.wrap(XWSX_fake_script)()
+local function VOHDYCW_fake_script() -- FloxxHubCB.A 
 	local script = Instance.new('LocalScript', FloxxHubCB)
 
 	local MF = script.Parent.MF
 	MF.Active = true
 	MF.Draggable = true
 end
-coroutine.wrap(HQUWWK_fake_script)()
-local function PQAXM_fake_script() -- FloxxHubCB.M 
+coroutine.wrap(VOHDYCW_fake_script)()
+local function DWFHC_fake_script() -- FloxxHubCB.M 
 	local script = Instance.new('LocalScript', FloxxHubCB)
 
 	local MF = script.Parent.MF
@@ -395,4 +396,4 @@ local function PQAXM_fake_script() -- FloxxHubCB.M
 	
 	game:GetService("UserInputService").InputBegan:connect(onKeyPress)
 end
-coroutine.wrap(PQAXM_fake_script)()
+coroutine.wrap(DWFHC_fake_script)()
